@@ -1,17 +1,21 @@
 const rockplayer = document.getElementById('rock');
 const paperplayer = document.getElementById('paper');
 const scissorsplayer = document.getElementById('scissors');
+let yourchoiceplayer = 0;
+
 
 rockplayer.addEventListener('click', function(){
-    teste(1)
+    yourChoice(1)
 });
 paperplayer.addEventListener('click', function(){
-    teste(2)
+    yourChoice(2)
 })
 scissorsplayer.addEventListener('click', function(){
-    teste(3)
+    yourChoice(3)
 });
 
-function teste(value) {
-    console.log(value);
+function yourChoice(value) {
+    const result = value + yourchoiceplayer
+    console.log(result)
+    return result
     }
