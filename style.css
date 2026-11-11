@@ -17,4 +17,8 @@ body {
     padding: 20px;
     background-color: #fffdfd;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
