@@ -4,3 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+    background: url(https://picsum.photos/1920/1080);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    background-color: #fffdfd;
+    border-radius: 10px;
+}
