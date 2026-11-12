@@ -3,6 +3,8 @@ const paperplayer = document.getElementById('paper');
 const scissorsplayer = document.getElementById('scissors');
 let yourchoiceplayer = 0;
 let generatechoice = 0;
+let yourpoint = document.querySelector('.your-point');
+let machinepoint = document.querySelector('.machine-point');
 
 
 rockplayer.addEventListener('click', function () {
@@ -37,26 +39,37 @@ function generateNumber() {
     generatechoice = result
     console.log("generate", generatechoice)
 
+}   
+
+function yourPoints(){
+
+}
+function machinePoints(){
+
 }
 
-function compareChoices() {
+function compareChoices() { 
+
     if (yourchoiceplayer === 1 && generatechoice === 1) {
-        alert("Seu oponente jogou pedra também, empate.")
+        document.getElementById("result-round").innerHTML = "Seu oponente jogou pedra também, empate.";
     } else if (yourchoiceplayer === 2 && generatechoice ===2) {
-        alert("Seu oponente jogou papel também, empate.")
+        document.getElementById("result-round").innerHTML = "Seu oponente jogou papel também, empate.";
     } else if (yourchoiceplayer === 3 && generatechoice === 3) {
-        alert("Seu oponente jogou tesoura também, empate.")
+        document.getElementById("result-round").innerHTML ="Seu oponente jogou tesoura também, empate.";
     } else if(yourchoiceplayer === 1 && generatechoice === 2) {
-        alert("O oponente escolheu papel, você perdeu.")
+        document.getElementById("result-round").innerHTML = "O oponente escolheu papel, você perdeu.";
     } else if(yourchoiceplayer === 1 && generatechoice === 3) {
-        alert("O oponente escolheu tesoura, você ganhou.")
+       document.getElementById("result-round").innerHTML = "O oponente escolheu tesoura, você ganhou.";
     } else if(yourchoiceplayer === 2 && generatechoice === 1) {
-        alert("O oponente escolheu pedra, você ganhou.") 
+       document.getElementById("result-round").innerHTML = "O oponente escolheu pedra, você ganhou.";
     } else if(yourchoiceplayer === 2 && generatechoice === 3) {
-        alert("O oponente escolheu tesoura, você perdeu.")
+        document.getElementById("result-round").innerHTML ="O oponente escolheu tesoura, você perdeu.";
     } else if(yourchoiceplayer === 3 && generatechoice === 1) {
-        alert("O oponente escolheu pedra, você perdeu.")
+        document.getElementById("result-round").innerHTML = "O oponente escolheu pedra, você perdeu.";
     } else if(yourchoiceplayer === 3 && generatechoice === 2) {
-        alert("O oponente escolheu papel, você ganhou.")
+        document.getElementById("result-round").innerHTML = "O oponente escolheu papel, você ganhou.";
     }
 }
+
+
+
