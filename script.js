@@ -91,5 +91,14 @@ function compareChoices() {
     }
 }
 
+function resetGame() {
+    cont1 = 0;
+    cont2 = 0;
+    yourpoint.innerHTML = cont1;
+    machinepoint.innerHTML = cont2;
+    document.getElementById("result-round").innerHTML = "Jogo reiniciado. Faça sua escolha!";
+
+}
+
 
 
