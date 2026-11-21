@@ -8,7 +8,7 @@ Um jogo clássico e interativo de Pedra, Papel e Tesoura desenvolvido com **Java
 
 Quer desafiar a máquina agora mesmo? Teste o jogo online pelo link:
 
-👉 **[Clique aqui para jogar o JokenPô](https://lmvc007.github.io/JokenP-/)**
+👉 **[Clique aqui para jogar o JokenPô](https://lmvc007.github.io/JokenPo/)**
 
 ---
 
